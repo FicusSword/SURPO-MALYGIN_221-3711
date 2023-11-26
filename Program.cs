@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+
 class Person
 {
     public string name = "Ben";
@@ -10,7 +11,6 @@ class Person
         this.name = name;
     }
 
-    
     public Person(string name, int age) : this(name)
     {
         this.age = age + 1;
@@ -20,7 +20,14 @@ class Person
     {
         this.email = email;
     }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"Имя: {name}, Возраст: {age}, Email: {email}");
+        Console.WriteLine($"Name: {name}, Age: {age}, Email: {email}");
+    }
 }
+
 class Program
 {
     static void Main()
