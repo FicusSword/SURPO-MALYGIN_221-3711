@@ -26,7 +26,7 @@ class Program
     static void Main()
     {
         Person person1 = new Person("Leon");
-        Person person2 = new Person("Ada", 25);
+        Person person2 = new Person("Ada", 23);
         Person person3 = new Person("Kris", 30, "Kris@gmail.com");
         person1.DisplayInfo();
         person2.DisplayInfo();
