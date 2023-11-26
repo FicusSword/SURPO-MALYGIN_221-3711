@@ -11,18 +11,10 @@ class Person
         this.name = name;
     }
 
-    // Ветка A: Изменения в конструкторе
     public Person(string name, int age) : this(name)
     {
-        this.age = age + 1; // Добавлено изменение: увеличиваем возраст на 1
+        this.age = age;
     }
-
-    public Person(string name, int age, string email) : this(name, age)
-    {
-        this.email = email;
-    }
-
-    // Ветка B: Изменения в методе DisplayInfo
     public void DisplayInfo()
     {
         Console.WriteLine($"Имя: {name}, Возраст: {age}, Email: {email}");
